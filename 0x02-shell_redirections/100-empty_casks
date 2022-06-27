@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f,d -empty -print | xargs -n 1 basename
+ find -empty | rev | cut -d'/' -f1 | rev
